@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>EMS</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="modal">
+      <button class="btn btn__close"><img src="src/images/close.svg" alt="icon-close"></button>
+      <div class="modal__content">
+        <h2 class="modal__title">Войти в систему</h2>
+        <form class="form">
+          <label for="login" class="form__login"></label>
+          <input id="login" class="form__field" type="text" placeholder="Email/Телефон">
+          <label for="password" class="form__login"></label>
+          <input id="password" class="form__field" type="password" placeholder="Пароль">
+          <input id="remember" type="checkbox" >
+          <label for="remember" class="form__remember">Запомнить пароль</label>
+          <a href="#" class="form__restore">Восстановить</a>
+          <a href="#" class="btn btn__form btn__form-primary">Войти</a>
+          <a href="#" class="btn btn__form btn__form-secondary">Зарегестрироваться</a>
+        </form>
+      </div>
+    </div>
+    <main class="content">
+      <div class="container">
+        <div class="content__message">
+          <h1 class="content__title">Демо-версия</h1>
+          <p class="content__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500
+            средних и малых проектов. Используя знания и накопленный опыт мы можем предложить
+          </p>
+          <a href="#" class="btn">
+            <span>Попробовать бесплатно</span>
+            <img src="src/images/arrow-up-right.svg" alt="icon-arrow">
+          </a>
+        </div>
+        <div class="content__preview">
+          <img src="src/images/pic1.jpg" alt="image-preview">
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
