@@ -1,10 +1,39 @@
 .content {
+  width: 100%;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ebf0fa;
+  }
 }
+
 .content__message {
+  display: flex;
+  gap: 36px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px;
 }
+
 .content__title {
+  color: #1f4284;
+  font-size: 30px;
+  font-weight: 500;
 }
 .content__text {
+  max-width: 600px;
+  color: #727272;
+  font-size: 17px;
 }
 .content__preview {
+  display: flex;
+  justify-content: center;
+
+  & img {
+    max-width: 100%;
+    object-fit: cover;
+  }
 }
