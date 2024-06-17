@@ -13,7 +13,7 @@
 
 <body>
   <div class="wrap">
-    <div class="modal">
+    <div class="modal visually-hidden">
       <button class="btn btn__close"><img src="src/images/close.svg" alt="icon-close"></button>
       <div class="modal__content">
         <h2 class="modal__title">Войти в систему</h2>
@@ -25,8 +25,8 @@
           <input id="remember" type="checkbox">
           <label for="remember" class="form__remember">Запомнить пароль</label>
           <a href="#" class="form__restore">Восстановить</a>
-          <a href="#" class="btn btn__form btn__form-primary">Войти</a>
-          <a href="#" class="btn btn__form btn__form-secondary">Зарегестрироваться</a>
+          <button class="btn btn__form btn__form-primary" type="submit">Войти</button>
+          <button class="btn btn__form btn__form-secondary" type="submit">Зарегестрироваться</button>
         </form>
       </div>
     </div>
@@ -37,9 +37,8 @@
           <p class="content__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500
             средних и малых проектов. Используя знания и накопленный опыт мы можем предложить
           </p>
-          <a href="#" class="btn">
-            <span>Попробовать бесплатно</span>
-            <img src="src/images/arrow-up-right.svg" alt="icon-arrow">
+          <a href="#" class="btn btn__try">
+            Попробовать бесплатно
           </a>
         </div>
         <div class="content__preview">
