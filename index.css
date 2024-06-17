@@ -13,11 +13,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-}
+@import url("src/styles/visually-hidden.css");
+@import url("src/styles/wrap.css");
+@import url("src/styles/buttons.css");
+@import url("src/styles/container.css");
+@import url("src/styles/content.css");
+@import url("src/styles/form.css");
