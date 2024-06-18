@@ -14,17 +14,19 @@
 <body>
   <div class="wrap">
     <div class="modal visually-hidden">
-      <button class="btn btn__close"><img src="src/images/close.svg" alt="icon-close"></button>
       <div class="modal__content">
+        <button class="btn btn__close"></button>
         <h2 class="modal__title">Войти в систему</h2>
         <form class="form">
           <label for="login" class="form__login"></label>
           <input id="login" class="form__field" type="text" placeholder="Email/Телефон">
           <label for="password" class="form__login"></label>
           <input id="password" class="form__field" type="password" placeholder="Пароль">
-          <input id="remember" type="checkbox">
-          <label for="remember" class="form__remember">Запомнить пароль</label>
-          <a href="#" class="form__restore">Восстановить</a>
+          <div class="form__wrap-row">
+            <input id="remember" class="visually-hidden" type="checkbox">
+            <label for="remember" class="form__remember">Запомнить пароль</label>
+          </div>
+          <a href="/restore" class="form__restore">Восстановить</a>
           <button class="btn btn__form btn__form-primary" type="submit">Войти</button>
           <button class="btn btn__form btn__form-secondary" type="submit">Зарегестрироваться</button>
         </form>
@@ -37,9 +39,9 @@
           <p class="content__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500
             средних и малых проектов. Используя знания и накопленный опыт мы можем предложить
           </p>
-          <a href="#" class="btn btn__try">
+          <button class="btn btn__try">
             Попробовать бесплатно
-          </a>
+          </button>
         </div>
         <div class="content__preview">
           <img src="src/images/pic1.jpg" alt="image-preview">

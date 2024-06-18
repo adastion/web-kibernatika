@@ -1,6 +1,6 @@
 .wrap {
   max-width: 1920px;
+  min-width: 375px;
   margin: 0 auto;
-  height: 100vh;
-  position: relative;
+  min-height: 100vh;
 }

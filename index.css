@@ -1,5 +1,7 @@
 @import url("src/styles/visually-hidden.css");
+@import url("src/styles/hidden-scroll.css");
 @import url("src/styles/wrap.css");
+@import url("src/styles/modal.css");
 @import url("src/styles/buttons.css");
 @import url("src/styles/content.css");
 @import url("src/styles/container.css");
@@ -27,7 +29,12 @@ body {
 }
 
 p,
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
 }
@@ -35,5 +42,3 @@ h1,h2,h3,h4,h5,h6 {
 a {
   text-decoration: none;
 }
-
-

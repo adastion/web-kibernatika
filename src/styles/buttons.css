@@ -1,4 +1,6 @@
 .btn {
+  background: none;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +40,7 @@
 
   @media screen and (max-width: 768px) {
     padding: 16px 18px;
+    width: 100%;
 
     &::after {
       width: 36px;
@@ -45,8 +48,8 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1440px) {
-    width: 260px;
+  @media screen and (max-width: 1440px) {
+    width: 290px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -54,11 +57,29 @@
   }
 }
 .btn__close {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: white url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
 }
+
 .btn__form {
   border-radius: 4px;
+  padding: 18px;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
 }
 .btn__form-primary {
+  color: white;
+  background-color: #244c98;
 }
 .btn__form-secondary {
+  color: #244c98;
+  background-color: white;
+  border: 1px soloed #244c98;
 }
