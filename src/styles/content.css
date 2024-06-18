@@ -1,5 +1,6 @@
 .content {
   width: 100%;
+  line-height: 160%;
 
   & .container {
     display: grid;
@@ -7,6 +8,11 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: #ebf0fa;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      justify-items: start;
+    }
   }
 }
 
@@ -16,17 +22,35 @@
   flex-direction: column;
   justify-content: center;
   padding: 72px;
+
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
+    padding: clamp(24px, 3.5vw, 72px);
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 768px) {
+    padding: 24px;
+    gap: clamp(18px, 5.5vw, 24px);
+  }
 }
 
 .content__title {
   color: #1f4284;
   font-size: 30px;
   font-weight: 500;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 .content__text {
   max-width: 600px;
   color: #727272;
   font-size: 17px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    width: 100%;
+  }
 }
 .content__preview {
   display: flex;

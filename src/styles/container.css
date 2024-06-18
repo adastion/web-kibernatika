@@ -1,4 +1,15 @@
 .container {
-  max-width: 100%;
   margin: 36px 40px;
+
+  @media screen and (min-width: 375px) and (max-width: 768px) {
+    margin: 24px;
+
+    & p {
+      font-size: 13px;
+    }
+
+    & h1 {
+      font-size: 17px;
+    }
+  }
 }
