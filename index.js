@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const buttonCallForlModalWindow = document.querySelector(".btn__try")
   const modalWindow = document.querySelector(".modal")
   const buttonCloseModalWindow = document.querySelectorAll(".btn__close")
+  const formElement = document.querySelector(".form")
 
   buttonCallForlModalWindow.addEventListener("click", (e) => {
     e.preventDefault()
@@ -24,5 +25,16 @@ window.addEventListener("DOMContentLoaded", () => {
       }
 
     })
+  })
+
+  formElement.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    const formData = new FormData(formElement)
+    const data = {}
+    formData.forEach((value, key) => {
+      data[key] = value
+    })
+    console.log(data)
   })
 })

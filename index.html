@@ -19,16 +19,16 @@
         <h2 class="modal__title">Войти в систему</h2>
         <form class="form">
           <label for="login" class="form__login"></label>
-          <input id="login" class="form__field" type="text" placeholder="Email/Телефон">
+          <input id="login" class="form__field" type="text" name="user-name" required placeholder="Email/Телефон">
           <label for="password" class="form__login"></label>
-          <input id="password" class="form__field" type="password" placeholder="Пароль">
+          <input id="password" class="form__field" type="password" name="password" required placeholder="Пароль">
           <div class="form__wrap-row">
             <input id="remember" class="visually-hidden" type="checkbox">
             <label for="remember" class="form__remember">Запомнить пароль</label>
           </div>
           <a href="/restore" class="form__restore">Восстановить</a>
           <button class="btn btn__form btn__form-primary" type="submit">Войти</button>
-          <button class="btn btn__form btn__form-secondary" type="submit">Зарегестрироваться</button>
+          <a href="/registration" class="btn btn__form btn__form-secondary" type="submit">Зарегестрироваться</a>
         </form>
       </div>
     </div>
